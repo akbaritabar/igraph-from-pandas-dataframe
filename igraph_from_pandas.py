@@ -35,7 +35,7 @@ def igraph_from_pandas(edges_table, vertices_table, source_cl='from', target_cl=
         raise ValueError("edges table is required!")
     if isinstance(vertices_table, pd.DataFrame):
         if not vertex_attrs:
-            raise ValueError('No attributes provided. Remove vetices table from arguments and try again')
+            raise ValueError('No attributes provided. Remove vertices table from arguments and try again.')
         else:
             try:
                 # order vertices table based on edge_list
